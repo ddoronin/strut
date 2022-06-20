@@ -1,0 +1,8 @@
+-- ROUTES --
+{{#each routes}}
+    {{this.method}} "{{this.path}}"
+
+    {{#each this.query_params}}
+        {{this._1}} {{this._2}}
+    {{/each}}
+{{/each}}
